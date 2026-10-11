@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso Eletro Frio | Ar-Condicionado, Geladeiras e Refrigeração em Cuiabá</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon1.jpeg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+    <!-- Header / Topo -->
+    <header class="bg-[#0b1b3d] text-white sticky top-0 z-50 shadow-md border-b border-blue-900/50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <!-- Logotipo -->
+            <a href="#" class="flex items-center space-x-3">
+                <img src="images/favicon1.jpeg" alt="Logo Sucesso Eletro Frio" class="w-10 h-10 object-contain logo-img">
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wide leading-none">SUCESSO</span>
+                    <span class="text-xs font-bold text-cyan-400 tracking-wider">ELETRO FRIO</span>
+                </div>
+            </a>
+            
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#servicos" class="hover:text-cyan-300 transition">Serviços</a>
+                <a href="#sobre" class="hover:text-cyan-300 transition">Quem Somos</a>
+                <a href="#depoimentos" class="hover:text-cyan-300 transition">Depoimentos</a>
+                <a href="#contato" class="hover:text-cyan-300 transition">Contato</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="https://wa.me/5565992092965?text=Olá,%20vim%20pelo%20site%20e%20preciso%20de%20atendimento!" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition flex items-center space-x-2 shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Fale no WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#07132b] px-4 pt-2 pb-6 space-y-3 border-t border-blue-900">
+            <a href="#servicos" class="block text-slate-200 hover:text-cyan-300 py-1 mobile-link">Serviços</a>
+            <a href="#sobre" class="block text-slate-200 hover:text-cyan-300 py-1 mobile-link">Quem Somos</a>
+            <a href="#depoimentos" class="block text-slate-200 hover:text-cyan-300 py-1 mobile-link">Depoimentos</a>
+            <a href="#contato" class="block text-slate-200 hover:text-cyan-300 py-1 mobile-link">Contato</a>
+            <a href="https://wa.me/5565992092965?text=Olá,%20vim%20pelo%20site%20e%20preciso%20de%20atendimento!" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2.5 rounded-xl font-medium text-sm transition flex items-center justify-center space-x-2 shadow w-full mt-3">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Fale no WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-white py-20 px-4 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(7, 19, 43, 0.92), rgba(3, 7, 18, 0.95)), url('images/banner-eletrofrio.png');">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            
+            <div class="space-y-6 text-center md:text-left">
+                <span class="bg-cyan-500/20 text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider inline-block border border-cyan-500/30">
+                    ❄️ Ar-Condicionado • Geladeiras • Refrigeração
+                </span>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+                    Soluções <span class="text-cyan-400">completas</span> para o seu lar ou seu negócio!
+                </h1>
+                
+                <div class="space-y-3 pt-2 text-left max-w-md mx-auto md:mx-0">
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                        <span>Ar-condicionado</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                        <span>Geladeiras</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                        <span>Freezers</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                        <span>Câmaras Frias</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                        <span>Refrigeração Comercial</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/5565992092965?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Fale com a gente pelo WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="bg-slate-950/40 p-4 rounded-2xl border border-blue-900/40 backdrop-blur-md shadow-2xl max-w-md">
+                    <img src="images/banner-eletrofrio.png" alt="Sucesso Eletro Frio Serviços" class="rounded-xl w-full object-cover shadow-md banner-img" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80'">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais Rápidos -->
+    <section class="py-10 bg-slate-900/60 border-y border-blue-900/30 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="flex flex-col items-center text-center p-4 bg-slate-900 rounded-xl border border-blue-900/30">
+                <i class="fa-solid fa-location-dot text-cyan-400 text-2xl mb-2"></i>
+                <span class="text-xs text-slate-300 font-medium">Atendimento em Cuiabá e região</span>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 bg-slate-900 rounded-xl border border-blue-900/30">
+                <i class="fa-solid fa-user-shield text-cyan-400 text-2xl mb-2"></i>
+                <span class="text-xs text-slate-300 font-medium">Técnicos qualificados</span>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 bg-slate-900 rounded-xl border border-blue-900/30">
+                <i class="fa-solid fa-file-shield text-cyan-400 text-2xl mb-2"></i>
+                <span class="text-xs text-slate-300 font-medium">Orçamento rápido</span>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 bg-slate-900 rounded-xl border border-blue-900/30">
+                <i class="fa-solid fa-award text-cyan-400 text-2xl mb-2"></i>
+                <span class="text-xs text-slate-300 font-medium">Serviço com garantia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços Detalhados -->
+    <section id="servicos" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Veja Como Podemos Te Ajudar</h2>
+            <p class="text-slate-400">Soluções especializadas para residências e comércios.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 hover:border-cyan-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-950 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-temperature-low"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-white">Conserto de Geladeira</h3>
+                <p class="text-slate-400 text-sm">Diagnóstico preciso e reparo ágil para manter seus alimentos sempre seguros.</p>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 hover:border-cyan-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-950 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-white">Conserto de Freezer</h3>
+                <p class="text-slate-400 text-sm">Atendimento rápido para evitar qualquer prejuízo com o degelo e perdas.</p>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 hover:border-cyan-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-950 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-white">Conserto de Ar-Condicionado</h3>
+                <p class="text-slate-400 text-sm">Manutenção corretiva, preventiva e cargas de gás para o seu conforto térmico.</p>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 hover:border-cyan-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-950 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-white">Máquina de Lavar Roupas</h3>
+                <p class="text-slate-400 text-sm">Suporte especializado para máquinas de lavar roupas comerciais e industriais.</p>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 hover:border-cyan-500/50 transition group sm:col-span-2 lg:col-span-2">
+                <div class="w-12 h-12 bg-blue-950 text-cyan-400 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-white">Manutenção e Instalação em Refrigeração</h3>
+                <p class="text-slate-400 text-sm">Projetos, instalações e manutenções completas em sistemas de refrigeração com total segurança e eficiência para o seu negócio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="bg-slate-900/50 py-16 px-4 border-y border-blue-900/30">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Nos conheça melhor!</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Bem-vindo à Sucesso Eletro Frio!</h2>
+            </div>
+            <div class="bg-slate-900 p-6 sm:p-8 md:p-10 rounded-2xl shadow-sm border border-blue-900/40 space-y-4 text-slate-300 leading-relaxed">
+                <p>
+                    Com 6 anos de experiência, somos a referência em conserto de eletrodomésticos em <strong>Cuiabá, MT</strong>. Nossa equipe de técnicos qualificados oferece serviços de alta qualidade e confiança, garantindo tranquilidade e satisfação para nossos clientes.
+                </p>
+                <p>
+                    Oferecemos conserto de geladeiras, freezers e ar condicionados, além de manutenção e instalação em sistemas de refrigeração. Cada serviço é executado com excelência, proporcionando segurança e eficiência, evitando problemas futuros e custos desnecessários.
+                </p>
+                <p>
+                    Nosso diferencial está no atendimento personalizado, na confiança e na garantia de nossos serviços. Estamos comprometidos em entregar soluções rápidas e eficientes, respeitando seu tempo e orçamento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Depoimentos de Clientes</h2>
+            <p class="text-slate-400">Veja o que quem já contratou diz sobre o nosso trabalho.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm mb-4">
+                        "Serviço rápido e eficiente. Meu freezer parou, chamei e em poucas horas tava funcionando de novo. Muito satisfeita com o atendimento."
+                    </p>
+                </div>
+                <div class="font-bold text-cyan-400 text-sm">— Maria Silva</div>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm mb-4">
+                        "Atendimentos de primeira, consertei minha geladeira com eles e ficou perfeita. Sem dor de cabeça, voltaria a contratar com certeza."
+                    </p>
+                </div>
+                <div class="font-bold text-cyan-400 text-sm">— João Pereira</div>
+            </div>
+
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-blue-900/40 flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm mb-4">
+                        "A instalação do ar-condicionado foi super rápida e bem feita. O pessoal da Sucesso Eletro Frio é top demais! Recomendo a todos."
+                    </p>
+                </div>
+                <div class="font-bold text-cyan-400 text-sm">— Ana Costa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé / Contato / Horários -->
+    <footer id="contato" class="bg-slate-950 text-slate-300 py-12 px-4 border-t border-blue-900/40">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-2 text-white mb-4">
+                    <img src="images/favicon1.jpeg" alt="Logo" class="w-6 h-6 object-contain logo-img">
+                    <span class="text-lg font-bold">Sucesso Eletro Frio</span>
+                </div>
+                <p class="text-sm text-slate-400 mb-4">
+                    Especialistas em conserto e manutenção de eletrodomésticos e refrigeração em Cuiabá e região.
+                </p>
+                <div class="flex items-center space-x-3 text-slate-300">
+                    <i class="fa-brands fa-instagram text-cyan-400 text-lg"></i>
+                    <a href="https://instagram.com/sucessoeletrofrio" target="_blank" class="text-sm hover:text-cyan-300 transition">sucessoeletrofrio</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Horários de Funcionamento</h4>
+                <p class="text-sm text-slate-400 mb-2"><strong class="text-slate-300">Segunda a Sexta-feira:</strong> 07:30 às 17:00</p>
+                <p class="text-sm text-slate-400"><strong class="text-slate-300">Sábado:</strong> 08:00 às 13:00</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Atendimento & Contato</h4>
+                <p class="text-sm text-slate-400 mb-4"><i class="fa-solid fa-location-dot text-cyan-400 mr-2"></i> Atendemos em Cuiabá e Região!</p>
+                <!-- Botão sem expor o número cru -->
+                <a href="https://wa.me/5565992092965?text=Olá,%20preciso%20de%20um%20atendimento." target="_blank" class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-5 py-2.5 rounded-xl transition shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Fale Conosco no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+            &copy; 2026 Sucesso Eletro Frio. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5565992092965?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento!" target="_blank" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl transition transform hover:scale-110 z-50" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
